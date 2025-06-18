@@ -24,7 +24,7 @@ class _GameAppState extends State<GameApp> {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        scaffoldBackgroundColor: Colors.yellow,
+        scaffoldBackgroundColor: Colors.greenAccent,
       ),
       home: Scaffold(
         body: SafeArea(

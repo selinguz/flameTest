@@ -15,9 +15,9 @@ class Player extends SpriteComponent with HasGameReference<GoGreenGame> {
 
     sprite = await Sprite.load("apple.png");
 
-    size = Vector2.all(200);
-    position = Vector2(0, -(gameHeight / 2));
-    anchor = Anchor.topCenter;
+    size = Vector2.all(100);
+    position = Vector2(0, -(gameHeight / 2) + (size.y / 2));
+    anchor = Anchor.center;
   }
 
   @override
