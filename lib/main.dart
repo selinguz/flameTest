@@ -1,5 +1,5 @@
 import 'package:flame/flame.dart';
-import 'package:flame_test/game_app.dart';
+import 'package:flame_test/app.dart';
 import 'package:flutter/material.dart';
 
 void main() {

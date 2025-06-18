@@ -1,6 +1,6 @@
 import 'package:flame/game.dart';
 import 'package:flame_test/constants.dart';
-import 'package:flame_test/go_green.dart';
+import 'package:flame_test/game/go_green_game.dart';
 import 'package:flutter/material.dart';
 
 class GameApp extends StatefulWidget {
@@ -11,12 +11,12 @@ class GameApp extends StatefulWidget {
 }
 
 class _GameAppState extends State<GameApp> {
-  late final GoGreen game;
+  late final GoGreenGame game;
 
   @override
   void initState() {
     super.initState();
-    game = GoGreen();
+    game = GoGreenGame();
   }
 
   @override
@@ -24,7 +24,7 @@ class _GameAppState extends State<GameApp> {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        scaffoldBackgroundColor: Colors.blue,
+        scaffoldBackgroundColor: Colors.yellow,
       ),
       home: Scaffold(
         body: SafeArea(
