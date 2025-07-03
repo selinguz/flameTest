@@ -10,13 +10,9 @@ import 'package:flutter/material.dart';
 class Player extends SpriteComponent with HasGameReference<GoGreenGame> {
   @override
   FutureOr<void> onLoad() async {
-    /* sprite_apple = await Sprite.load("apple.png");
-    sprite_banana = await Sprite.load("banana.png");
-    sprite_strawberry = await Sprite.load("strawberry.png"); */
+    sprite = await Sprite.load("bottle.png");
 
-    sprite = await Sprite.load("apple.png");
-
-    size = Vector2.all(100);
+    size = Vector2.all(150);
     position = Vector2(0, -(gameHeight / 2) + (size.y / 2));
     anchor = Anchor.center;
     add(RectangleHitbox()); //çarpılabilir, kırılabilir efektini veren ifade
