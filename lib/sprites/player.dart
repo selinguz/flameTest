@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame_test/constants.dart';
 import 'package:flame_test/game/go_green_game.dart';
@@ -18,6 +19,7 @@ class Player extends SpriteComponent with HasGameReference<GoGreenGame> {
     size = Vector2.all(100);
     position = Vector2(0, -(gameHeight / 2) + (size.y / 2));
     anchor = Anchor.center;
+    add(RectangleHitbox()); //çarpılabilir, kırılabilir efektini veren ifade
   }
 
   @override
